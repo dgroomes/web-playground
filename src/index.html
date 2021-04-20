@@ -7,7 +7,48 @@
 </head>
 <body>
 
-<p id="message">Hello!</p>
+<div class="shadow-host">
+    <template shadowroot="open">
+        <style>
+            p {
+                color: blue;
+                font-family: serif;
+            }
+        </style>
+        <p id="message">
+            Hello from a Shadow DOM tree!
+        </p>
+    </template>
+</div>
+
+
+<div class="shadow-host">
+    <template shadowroot="open">
+        <style>
+            p {
+                color: green;
+                font-family: sans-serif;
+            }
+        </style>
+        <p id="message">
+            Hello from a Shadow DOM tree!
+        </p>
+    </template>
+</div>
+
+<div class="shadow-host">
+    <template shadowroot="open">
+        <style>
+            p {
+                color: red;
+                font-family: monospace;
+            }
+        </style>
+        <p id="message">
+            Hello from a Shadow DOM tree!
+        </p>
+    </template>
+</div>
 
 <script src="code.js"></script>
 
