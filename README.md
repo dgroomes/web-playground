@@ -29,15 +29,17 @@ A Shadow DOM example.
 
 See the README in [shadow-dom/](shadow-dom/).
 
+### `indexed-db/`
+
+An IndexedDB example.
+
+See the README in [indexed-db/](indexed-db/).
+
 ## Wish List
 
 General clean ups, TODOs and things I wish to implement for this project:
 
 * DONE Implement a Shadow DOM example
-* Implement an IndexedDB example
-
-## Reference
-
-Materials that I referenced and found useful while developing this project:
-
-* [MDN Web Docs: *IndexedDB API*](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
+* DONE Implement an IndexedDB example
+* Stop the browser from caching the index.html that might be cached in the browser. When you switch between projects,
+  this happens.
