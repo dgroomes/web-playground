@@ -35,6 +35,12 @@ An IndexedDB example.
 
 See the README in [indexed-db/](indexed-db/).
 
+### `data-urls/`
+
+A *Data URLs* example which shows how to download client side content as a file.
+
+See the README in [data-urls/](data-urls/).
+
 ## Wish List
 
 General clean ups, TODOs and things I wish to implement for this project:

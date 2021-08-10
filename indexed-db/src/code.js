@@ -2,7 +2,7 @@
 
 /**
  * Connect to the IndexedDB database. returns a promise
- * @return Promise containing an IndexedDB object (I'm not really sure what this type is).
+ * @return {Promise} containing an IndexedDB object (I'm not really sure what this type is).
  */
 async function connect() {
     return new Promise((resolve, reject) => {
@@ -58,7 +58,7 @@ async function add(db, obj) {
  * Async-ified version of IndexedDB's "transactions"'s "getAll" function
  * @return {Promise<void>}
  * @param db the IndexedDB instance
- * @return Array
+ * @return {Array}
  */
 async function getAll(db) {
     let transaction = db.transaction(["data"], "readonly")
