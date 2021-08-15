@@ -1,6 +1,6 @@
 # data-urls
 
-A *Data URLs* example which shows how to download client side content as a file. 
+A *Data URLs* example which shows how to download client side content as a file.
 
 ## Description
 
@@ -15,7 +15,7 @@ conveniently lets the user download a file containing that content. No server in
     * Open the browser and navigate to <http://localhost:8000>
 * Download the file!
     * Click the download button to download the highlighted "environmental info" content as a file. This is awesome!
-    * It will look something like this: 
+    * It will look something like this:
       ![Screenshot](screenshot.png "Screenshot")
 
 ## Reference
