@@ -69,6 +69,17 @@ sentence should render on one contiguous line.
 <span style="font-size: 300%;vertical-align: text-top;">in increasingly large </span>
 <span style="font-size: 400%;vertical-align: top;">font sizes.</span>
 
+<h2><code>display: float</code></h2>
+<p>How does the <code>float</code> display type work? <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model#line_boxes">
+    This section of an article on the MDN Web Docs</a> explains it well in the context of line boxes.
+</p>
 
+<div style="float: left; width: 50px; height: 50px; background-color: cornflowerblue"></div>
+<p>This sentence follows the floated element (blue box). A floated element can simply be called a <em>float</em>. This
+    sentence is pushed to the right to accommodate the space occupied by the float. I am still trying to wrap my head
+    around the idea of "taken out of flow", how line boxes work, and the mystical mystery box that backs every element.
+    Remember, everything boils down to a box. Is this the <em>root box</em>?
+</p>
 </body>
 </html>
