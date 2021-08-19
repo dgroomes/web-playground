@@ -11,7 +11,8 @@
 See the README for more information!
 
 <h2>Inline elements</h2>
-Hello, <span style="color: red">the red text is in a &lt;span&gt; tag</span> which is an inline element. This whole sentence should render on one contiguous line.
+Hello, <span style="color: red">the red text is in a &lt;span&gt; tag</span> which is an inline element. This whole
+sentence should render on one contiguous line.
 
 <h2>Block elements</h2>
 
@@ -26,6 +27,19 @@ Hello, <span style="color: red">the red text is in a &lt;span&gt; tag</span> whi
     <div style="display: inline">This sentence is on one line</div>
     <div style="display: inline">even though it is made up of three different &lt;div&gt; elements</div>
     <div style="display: inline">which are block elements by default!</div>
+</div>
+
+<h2>Mixing inline and block</h2>
+<p>
+    I'm trying to have a series of elements display *inline* (all in one line!) but as soon as there is one block
+    element,it breaks onto a new line and is not contained on the original line. I want the block element to break on a
+    new line but still be in the same column, if that makes sense.</p>
+<div style="display: inline; background-color: darksalmon; border: black 10px">
+    <div style="display: inline; background-color: aliceblue">A</div>
+    <div style="display: inline; background-color: antiquewhite">
+        <div>B!</div>
+        C
+    </div>
 </div>
 
 </body>
