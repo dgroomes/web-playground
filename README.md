@@ -41,6 +41,12 @@ A *Data URLs* example which shows how to download client side content as a file.
 
 See the README in [data-urls/](data-urls/).
 
+### `css/`
+
+Learning CSS snippet-by-snippet and hopefully committing some of it to memory.
+
+See the README in [css/](css/).
+
 ## Wish List
 
 General clean ups, TODOs and things I wish to implement for this project:
