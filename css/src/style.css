@@ -1,0 +1,7 @@
+/*
+I use the <code> tag inside of headers but the text looks small. It looks so small that you might not realize it's even
+a header. Adjust the font size higher for code snippets in headers
+*/
+h2 code {
+    font-size: 130%
+}

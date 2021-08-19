@@ -75,11 +75,11 @@ sentence should render on one contiguous line.
     This section of an article on the MDN Web Docs</a> explains it well in the context of line boxes.
 </p>
 
-<div style="float: left; width: 50px; height: 50px; background-color: cornflowerblue"></div>
-<p>This sentence follows the floated element (blue box). A floated element can simply be called a <em>float</em>. This
-    sentence is pushed to the right to accommodate the space occupied by the float. I am still trying to wrap my head
-    around the idea of "taken out of flow", how line boxes work, and the mystical mystery box that backs every element.
-    Remember, everything boils down to a box. Is this the <em>root box</em>?
+<div style="float: left; width: 50px; height: 150px; margin: 10px; background-color: cornflowerblue"></div>
+<p style="background-color: lightgray">This sentence follows the floated element (blue box). A floated element can
+    simply be called a <em>float</em>. This sentence is pushed to the right to accommodate the space occupied by the
+    float. Notice how the background color of the <code>&lt;p&gt;</code> element is not pushed to the right though, it
+    extends to the lefthand side and appears underneath the float! I am still trying to wrap my head around the
+    idea of "taken out of flow", how line boxes work, and the mystical mystery box that backs every element. Remember,
+    everything boils down to a box. Is this the <em>root box</em>?
 </p>
-</body>
-</html>
