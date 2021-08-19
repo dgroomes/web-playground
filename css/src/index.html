@@ -11,32 +11,46 @@
 See the README for more information!
 
 <h2>Inline elements</h2>
-Hello, <span style="color: red">the red text is in a &lt;span&gt; tag</span> which is an inline element. This whole
+Hello, <span style="color: red">the red text is in a <code>&lt;span&gt;</code> tag</span> which is an inline element. This whole
 sentence should render on one contiguous line.
 
 <h2>Block elements</h2>
 
-<p>I'm a paragraph. I'm inside a &lt;p&gt; tag!</p>
+<p>I'm a paragraph. I'm inside a <code>&lt;p&gt;</code> tag!</p>
 <p>I'm a second paragraph! Paragraphs are block elements which mean they are divided by a new line.</p>
 
-<div>&lt;div&gt; elements are block elements too.</div>
+<div><code>&lt;div&gt;</code> elements are block elements too.</div>
 
 <h2>Block elements forced into normal flow</h2>
 
 <div>
     <div style="display: inline">This sentence is on one line</div>
-    <div style="display: inline">even though it is made up of three different &lt;div&gt; elements</div>
+    <div style="display: inline">even though it is made up of three different <code>&lt;div&gt;</code> elements</div>
     <div style="display: inline">which are block elements by default!</div>
 </div>
 
-<h2>Mixing inline and block</h2>
+<h2>Composing inline and block</h2>
 <p>
-    I'm trying to have a series of elements display *inline* (all in one line!) but as soon as there is one block
-    element,it breaks onto a new line and is not contained on the original line. I want the block element to break on a
-    new line but still be in the same column, if that makes sense.</p>
+    Composing block elements with inline elements is like mixing oil and water. It doesn't work. In the below example I'm
+    trying to have a series of elements display *inline* (all in one line!) but as soon as there is one block element,
+    it breaks onto a new line and is not contained on the original line. This is undesired. The solution, it turns out,
+    is to use <code>display: inline-block</code> (see the later example).</p>
 <div style="display: inline; background-color: darksalmon; border: black 10px">
     <div style="display: inline; background-color: aliceblue">A</div>
     <div style="display: inline; background-color: antiquewhite">
+        <div>B!</div>
+        C
+    </div>
+</div>
+
+<h2><code>inline-block</code></h2>
+<p>The property value <code>display: inline-block</code> allows composing inline behavior and block behavior as desired. In
+    fact, my mind is blown. I didn't understand the concept that there is <em>both an inner and outer display type</em> for elements
+    until I read <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">this excellent MDN article</a>.
+</p>
+<div style="display: inline-block; background-color: darksalmon; border: black 10px">
+    <div style="display: inline; background-color: aliceblue">A</div>
+    <div style="display: inline-block; background-color: antiquewhite">
         <div>B!</div>
         C
     </div>
