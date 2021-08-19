@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Hello world!</title>
+    <title>Learning CSS by example</title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -10,19 +10,20 @@
 <h1>Learning CSS by example</h1>
 See the README for more information!
 
-<h2>Inline elements</h2>
+<h2 id="inline_elements"><a href="#inline_elements">Inline elements</a></h2>
 Hello, <span style="color: red">the red text is in a <code>&lt;span&gt;</code> tag</span> which is an inline element.
 This whole
 sentence should render on one contiguous line.
 
-<h2>Block elements</h2>
+<h2 id="block_elements"><a href="#block_elements">Block elements</a></h2>
 
 <p>I'm a paragraph. I'm inside a <code>&lt;p&gt;</code> tag!</p>
 <p>I'm a second paragraph! Paragraphs are block elements which mean they are divided by a new line.</p>
 
 <div><code>&lt;div&gt;</code> elements are block elements too.</div>
 
-<h2>Block elements forced into normal flow</h2>
+<h2 id="block_elements_forced_into_normal_flow"><a href="#block_elements_forced_into_normal_flow">Block elements forced
+    into normal flow</a></h2>
 
 <div>
     <div style="display: inline">This sentence is on one line</div>
@@ -30,7 +31,7 @@ sentence should render on one contiguous line.
     <div style="display: inline">which are block elements by default!</div>
 </div>
 
-<h2>Composing inline and block</h2>
+<h2 id="composing_inline_and_block"><a href="#composing_inline_and_block">Composing inline and block</a></h2>
 <p>
     Composing block elements with inline elements is like mixing oil and water. It doesn't work. In the below example
     I'm
@@ -45,7 +46,7 @@ sentence should render on one contiguous line.
     </div>
 </div>
 
-<h2><code>display: inline-block</code></h2>
+<h2 id="display_inline_block"><a href="#display_inline_block"><code>display: inline-block</code></a></h2>
 <p>The property value <code>display: inline-block</code> allows composing inline behavior and block behavior as desired.
     In
     fact, my mind is blown. I didn't understand the concept that there is <em>both an inner and outer display type</em>
@@ -60,7 +61,8 @@ sentence should render on one contiguous line.
     </div>
 </div>
 
-<h2>Vertical aligning inline elements</h2>
+<h2 id="vertical_aligning_inline_elements"><a href="#vertical_aligning_inline_elements">Vertical aligning inline
+    elements</a></h2>
 <p>Can we vertically align inline elements? Answer: yes but <code>vertical-align: middle</code> doesn't align the
     element in the vertical middle.</p>
 
@@ -69,8 +71,8 @@ sentence should render on one contiguous line.
 <span style="font-size: 300%;vertical-align: text-top;">in increasingly large </span>
 <span style="font-size: 400%;vertical-align: top;">font sizes.</span>
 
-<h2><code>display: float</code></h2>
-<p>How does the <code>float</code> display type work? <a
+<h2 id="float"><a href="#float">Float</a></h2>
+<p>How does the <code>float</code> property work? <a
         href="https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model#line_boxes">
     This section of an article on the MDN Web Docs</a> explains it well in the context of line boxes.
 </p>
@@ -83,3 +85,19 @@ sentence should render on one contiguous line.
     idea of "taken out of flow", how line boxes work, and the mystical mystery box that backs every element. Remember,
     everything boils down to a box. Is this the <em>root box</em>?
 </p>
+
+<h2 id="display_flex"><a href="#display_flex"><code>display: flex</code></a></h2>
+<p>How does the <code>flex</code> display type work?</p>
+
+<div style="display: flex">
+    <div style="width: 50px; height: 150px; margin: 10px; background-color: cornflowerblue"></div>
+    <p style="background-color: lightgray">This example presents the same visual elements as the earlier example–<a
+            href="#float">Float</a>–: a box and a paragraph. But, it uses the flex display type instead of a float.
+        There are two visual differences. Firstly, the gray background of the paragraph does not extend to the left.
+        Instead, the float and the paragraphs are occupying their own spaces without overlapping! Secondly, the
+        paragraphs' gray background extends vertically instead of covering just the vertical space occupied by the text.
+    </p>
+</div>
+
+</body>
+</html>
