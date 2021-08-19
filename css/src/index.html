@@ -11,7 +11,8 @@
 See the README for more information!
 
 <h2>Inline elements</h2>
-Hello, <span style="color: red">the red text is in a <code>&lt;span&gt;</code> tag</span> which is an inline element. This whole
+Hello, <span style="color: red">the red text is in a <code>&lt;span&gt;</code> tag</span> which is an inline element.
+This whole
 sentence should render on one contiguous line.
 
 <h2>Block elements</h2>
@@ -31,7 +32,8 @@ sentence should render on one contiguous line.
 
 <h2>Composing inline and block</h2>
 <p>
-    Composing block elements with inline elements is like mixing oil and water. It doesn't work. In the below example I'm
+    Composing block elements with inline elements is like mixing oil and water. It doesn't work. In the below example
+    I'm
     trying to have a series of elements display *inline* (all in one line!) but as soon as there is one block element,
     it breaks onto a new line and is not contained on the original line. This is undesired. The solution, it turns out,
     is to use <code>display: inline-block</code> (see the later example).</p>
@@ -44,8 +46,10 @@ sentence should render on one contiguous line.
 </div>
 
 <h2><code>display: inline-block</code></h2>
-<p>The property value <code>display: inline-block</code> allows composing inline behavior and block behavior as desired. In
-    fact, my mind is blown. I didn't understand the concept that there is <em>both an inner and outer display type</em> for elements
+<p>The property value <code>display: inline-block</code> allows composing inline behavior and block behavior as desired.
+    In
+    fact, my mind is blown. I didn't understand the concept that there is <em>both an inner and outer display type</em>
+    for elements
     until I read <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">this excellent MDN article</a>.
 </p>
 <div style="display: inline-block; background-color: darksalmon; border: black 10px">
@@ -55,6 +59,16 @@ sentence should render on one contiguous line.
         C
     </div>
 </div>
+
+<h2>Vertical aligning inline elements</h2>
+<p>Can we vertically align inline elements? Answer: yes but <code>vertical-align: middle</code> doesn't align the
+    element in the vertical middle.</p>
+
+<span style="vertical-align: bottom;">This is a </span>
+<span style="font-size: 200%;vertical-align: text-top;">sentence of words </span>
+<span style="font-size: 300%;vertical-align: text-top;">in increasingly large </span>
+<span style="font-size: 400%;vertical-align: top;">font sizes.</span>
+
 
 </body>
 </html>
