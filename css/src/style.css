@@ -1,3 +1,8 @@
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 /*
 I use the <code> tag inside of headers but the text looks small. It looks so small that you might not realize it's even
 a header. Adjust the font size higher for code snippets in headers
@@ -5,6 +10,7 @@ a header. Adjust the font size higher for code snippets in headers
 h2 code {
     font-size: 130%
 }
+
 .grid-wrapper > div {
     border: 2px solid rgb(233,171,88);
     border-radius: 5px;
