@@ -115,9 +115,25 @@ sentence should render on one contiguous line.
     <div style="grid-column: 2; grid-row: 3;">This element is contained in just the second column, on the third row.
     </div>
     <div style="grid-column: 1 / 3; grid-row: 4;">This element covers both columns,<br> on the fourth row</div>
-    <div style="grid-column: 2; grid-row: 4 / 6;"><br><br><br><br><br>This element covers the fourth and fifth rows in the second column. It
+    <div style="grid-column: 2; grid-row: 4 / 6;"><br><br><br><br><br>This element covers the fourth and fifth rows in
+        the second column. It
         overlaps with another grid element!
     </div>
+</div>
+
+<p>The above example used an explicit grid. Specifically, we attached each cell to specific columns and rows via style
+    properties. Alternatively, we can use an implicit grid if our cells don't vary in coverage and placement. To use
+    an implicit grid, we omit the <code>grid-column:</code> and <code>grid-row</code> properties. The grid elements will
+    simply be laid out in order of their declaration. See the below implicit grid:
+</p>
+
+<div class="grid-wrapper"
+     style="display: grid; gap: 10px; grid-template-columns: 300px 1fr; grid-auto-rows: minmax(100px, auto);">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
 </div>
 
 </body>
