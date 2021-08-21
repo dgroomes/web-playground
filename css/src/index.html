@@ -103,15 +103,21 @@ sentence should render on one contiguous line.
 
 <h2 id="display_grid"><a href="#display_grid"><code>display: grid</code></a></h2>
 <p>The CSS Grid Layout is pretty new and pretty cool. The below example is adapted from the <a
-        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">MDN Web Docs</a></p>
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">MDN Web Docs</a>. It is a grid with
+    two columns and multiple rows. The first column is defined with a 300px fixed width and the second columnis defined
+    with a variable width using the <code>fr</code> unit. It will grow to expand the available width of the page.</p>
 
-<div class="grid-wrapper" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; grid-auto-rows: minmax(100px, auto);">
-    <div style="grid-column: 1 / 3; grid-row: 1;">One</div>
-    <div style="grid-column: 2 / 4; grid-row: 1 / 3;">Two</div>
-    <div style="grid-column: 1; grid-row: 2 / 5;">Three</div>
-    <div style="grid-column: 3; grid-row: 3;">Four</div>
-    <div style="grid-column: 2; grid-row: 4;">Five</div>
-    <div style="grid-column: 3; grid-row: 4;">Six</div>
+<div class="grid-wrapper"
+     style="display: grid; grid-template-columns: 300px 1fr; gap: 10px; grid-auto-rows: minmax(100px, auto);">
+    <div style="grid-column: 1 / 3; grid-row: 1;">This element covers both columns, on the first row.</div>
+    <div style="grid-column: 1; grid-row: 2;">This element is contained in just the first column, on the second row.
+    </div>
+    <div style="grid-column: 2; grid-row: 3;">This element is contained in just the second column, on the third row.
+    </div>
+    <div style="grid-column: 1 / 3; grid-row: 4;">This element covers both columns,<br> on the fourth row</div>
+    <div style="grid-column: 2; grid-row: 4 / 6;"><br><br><br><br><br>This element covers the fourth and fifth rows in the second column. It
+        overlaps with another grid element!
+    </div>
 </div>
 
 </body>

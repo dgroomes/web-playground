@@ -16,3 +16,4 @@ And even if I can't commit it to memory, at least I can refer to these examples!
 Materials that I referenced and found useful while developing this project:
 
 * [MDN Web Docs: The `display` CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+* [MDB Web Docs: *Basic Concepts of grid layout*](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
