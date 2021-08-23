@@ -47,6 +47,12 @@ Learning CSS snippet-by-snippet and hopefully committing some of it to memory.
 
 See the README in [css/](css/).
 
+### `browser-extensions/`
+
+A simple Chrome browser extension for learning purposes.
+
+See the README in [browser-extensions/](browser-extensions/).
+
 ## Wish List
 
 General clean ups, TODOs and things I wish to implement for this project:

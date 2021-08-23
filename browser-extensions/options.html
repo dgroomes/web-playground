@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Options</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="persistence.js"></script>
+    <script defer src="options.js"></script>
+</head>
+<body>
+
+<h1>Extension Options</h1>
+<p>These are the options for the <code>web-playground/browser-extensions</code> Chrome browser extension.</p>
+
+<p>Configure the 'Header text' field with some text. You will be able to use this extension to replace the text content
+    of any <code>&lt;h1&gt;</code> element with this text.</p>
+
+<form id="options-form">
+    <ul>
+        <li>
+            <label for="header-text">Header text:</label>
+            <textarea id="header-text" name="header-text" required></textarea>
+        </li>
+
+        <li class="button">
+            <button type="submit" id="save" name="save">Save the settings</button>
+        </li>
+    </ul>
+</form>
+
+</body>
+</html>
