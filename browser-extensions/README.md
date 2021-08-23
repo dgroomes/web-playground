@@ -44,8 +44,17 @@ Compare and contrast the browser extension API differences by reading the docs:
 Note that there is a brighter future for standardized cross-browser extension development. Read this MDN Web Docs article
 about it:[Building a cross-browser extension](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Build_a_cross_browser_extension).
 
+## Wish List
+
+General clean ups, TODOs and things I wish to implement for this project:
+
+* DONE How can we include the JavaScript source code to avoid `Uncaught ReferenceError: getHeaderText is not defined`? 
+* Look into "browser actions" instead of what I'm doing, which is a custom popup HTML document.
+
 ## Reference
 
 Materials that I referenced and found useful while developing this project:
 
 * [Chrome developer docs: extensions *API Reference*](https://developer.chrome.com/docs/extensions/reference/)
+  * [Content scripts](https://developer.chrome.com/docs/extensions/mv3/content_scripts/)
+  * [`chrome.scripting`](https://developer.chrome.com/docs/extensions/reference/scripting/)
