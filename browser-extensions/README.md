@@ -12,6 +12,12 @@ This is a simple web extension for Chrome using the Manifest v3 API.
 
 See the README in [manifest-v3-chrome/](manifest-v3-chrome/).
 
+### `firefox-message-passing/`
+
+This is a Firefox web extension that illustrates message passing.
+
+See the README in [firefox-message-passing/](firefox-message-passing/).
+
 ## Notes
 
 The web is awesome. Web browsers are extremely powerful, and Web APIs are mostly brilliantly documented by
@@ -39,7 +45,7 @@ General clean ups, TODOs and things I wish to implement for this project:
 
 * DONE How can we include the JavaScript source code to avoid `Uncaught ReferenceError: getHeaderText is not defined`?
 * Look into "browser actions" instead of what I'm doing, which is a custom popup HTML document.
-* Add message passing. I think message passing is a pretty important tool in extension design.
+* DONE Add message passing. I think message passing is a pretty important tool in extension design.
 
 ## Reference
 
