@@ -24,7 +24,7 @@ Follow these instructions to install and run the extension in FireFox:
 * Run a local web server:
     * `python3 -m http.server --directory web/`
 * Open the browser
-    * Open the browser and navigate to <http://localhost:8000/index.html>
+    * Open the browser and navigate to <http://localhost:8000>
 * Pass some messages!
     * Follow the instructions on the page to send messages between the three layers.
     * Open the console to see the results
