@@ -45,3 +45,14 @@ Materials that I referenced and found useful while developing this project:
     explaining this well, but still. I'm working around this by copying objects as needed instead of side effecting the
     object.
 * [MDN Web Docs: *The structured clone algorithm*](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm)
+* [MDN Web Docs: *runtime.sendMessage()*](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/sendMessage)
+   * Notice how the third argument to this function is an "options" object:
+     ```
+     var sending = browser.runtime.sendMessage(
+       extensionId,             // optional string
+       message,                 // any
+       options                  // optional object
+     )
+     ```
+     So how is it possible that my example extension passes a callback function as the third function, and it actually
+     works?
