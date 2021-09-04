@@ -17,10 +17,10 @@ window.addEventListener("message", (message) => {
         console.log(`[content-script.js] Broadcasting a message to the extension messaging system: ${jsonify(payload)}`)
         browser.runtime.sendMessage(null,
             payload,
+            null,
             function (response) {
                 console.log(`[content-script.js] Received a response via callback from the extension messaging system: ${jsonify(response)}`)
 
-                // response.chainOfCustody = [...response.chainOfCustody] // Extract the chainOfCustody array but copy it into a new array (with the spread operator) because of the side-effecting problem. See the README.
                 response.chainOfCustody.push("content-script.js")
 
                 console.log(`[content-script.js] Broadcasting a message to the window: ${jsonify(response)}`)

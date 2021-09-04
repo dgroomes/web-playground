@@ -55,4 +55,8 @@ Materials that I referenced and found useful while developing this project:
      )
      ```
      So how is it possible that my example extension passes a callback function as the third function, and it actually
-     works?
+     works? UPDATE: I've changed the call site to actually pass the callback function as the *fourth* argument and the
+     extension continues to work. No fourth parameter is even documented! I believe Firefox is supporting this
+     fourth parameter for compatibility with Chrome's implementation of [runtime.sendMessage()](https://developer.chrome.com/docs/extensions/reference/runtime/#method-sendMessage).
+* [MDN Web Docs: *runtime.onMessage*](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onMessage)
+  > Use this event to listen for messages from another part of your extension.
