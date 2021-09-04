@@ -1,5 +1,4 @@
 {
-
   "name": "Message Passing",
   "manifest_version": 2,
   "description": "This is a simple extension from the 'web-playground/browser-extension' sub-project",
@@ -11,8 +10,12 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://localhost/*"],
-      "js": ["content-script.js"]
+      "matches": [
+        "http://localhost/*"
+      ],
+      "js": [
+        "content-script.js"
+      ]
     }
   ]
 }
