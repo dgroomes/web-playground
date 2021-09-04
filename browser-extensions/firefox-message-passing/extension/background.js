@@ -8,9 +8,31 @@ browser.runtime.onMessage.addListener(function (message, _sender, sendResponse) 
 
     message.chainOfCustody.push("background.js")
 
-    console.log(`[background.js] Invoking the given callback to send a response back via the extension messaging system: ${jsonify(message)}`)
-    sendResponse(message)
+    someAsyncFunction()
+        .then(() => {
+            console.log(`[background.js] Invoking the given callback to send a response back via the extension messaging system: ${jsonify(message)}`)
+            sendResponse(message)
+        })
+
+    return true // Responding with "true" tells Firefox that we plan to invoke the "sendResponse" function later. Otherwise, "sendResponse" would become invalid.
 })
+
+/**
+ * This is a toy example of an asynchronous function that takes a second to "do some work", and then complete. The async
+ * state is implemented with a Promise.
+ *
+ * It exists only to exercise the async support of "runtime.onMessage".
+ *
+ * @return {Promise} a promise that resolves when the
+ */
+function someAsyncFunction() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            console.log(`[someAsyncFunction] Done!`)
+            resolve()
+        }, 1000)
+    })
+}
 
 /**
  * JSONify an object. This is especially useful for logging.
