@@ -2,12 +2,7 @@
 
 📚 Learning and experimenting with various web technologies.
 
----
-**NOTE**:
-
-This was developed on macOS and for my own personal use.
-
----
+**NOTE**: This project was developed on macOS. It is for my own personal use.
 
 ## Description
 
@@ -57,7 +52,7 @@ See the README in [browser-extensions/](browser-extensions/).
 
 General clean ups, TODOs and things I wish to implement for this project:
 
-* DONE Implement a Shadow DOM example
-* DONE Implement an IndexedDB example
-* Stop the browser from caching the index.html that might be cached in the browser. When you switch between projects,
+* [x] DONE Implement a Shadow DOM example
+* [x] DONE Implement an IndexedDB example
+* [ ] Stop the browser from caching the index.html that might be cached in the browser. When you switch between projects,
   this happens.
