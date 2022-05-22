@@ -21,6 +21,7 @@ h2 code {
 
 table.table-style-1 {
     border-collapse: collapse;
+    border: 1px solid #d9480f;
 }
 
 table.table-style-1 td, table.table-style-1 th  {
@@ -32,8 +33,41 @@ table.table-style-1 tbody tr:nth-child(odd) {
     background-color: rgba(233,171,88,.5);
 }
 
-table.table-style-1 {
+:root {
+    --table-style-2-default-column-width: 200px;
+    --table-style-2-cell-margin: 5px;
+    --table-style-2-cell-padding: 5px;
+}
+
+table.table-style-2 {
     border: 1px solid #d9480f;
+    border-collapse: collapse;
+    width: fit-content;
+    height: 240px;
+    display: block;
+    overflow-x: auto;
+}
+
+table.table-style-2 th {
+    border-bottom: 1px solid black;
+    margin: var(--table-style-2-cell-margin);
+    padding: var(--table-style-2-cell-padding);
+    width: var(--table-style-2-default-column-width);
+
+    /* This is a trick to get user-resizable columns.
+    See https://stackoverflow.com/questions/41674548/how-to-make-html-table-columns-resizable */
+    overflow: auto;
+    resize: horizontal;
+}
+
+table.table-style-2 td {
+    margin: var(--table-style-2-cell-margin);
+    padding: var(--table-style-2-cell-padding);
+    width: var(--table-style-2-default-column-width);
+}
+
+table.table-style-2 tbody tr:nth-child(odd) {
+    background-color: rgba(233,171,88,.5);
 }
 
 /* I took these block quote styles from MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote */
