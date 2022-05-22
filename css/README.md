@@ -7,7 +7,9 @@ And even if I can't commit it to memory, at least I can refer to these examples!
 ## Instructions
 
 * Run a local web server:
-    * `python3 -m http.server --directory src/`
+    * ```shell
+      python3 -m http.server --directory src/
+      ```
 * Open the browser
     * Open the browser and navigate to <http://localhost:8000>
 
