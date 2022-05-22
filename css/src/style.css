@@ -18,3 +18,40 @@ h2 code {
     padding: 1em;
     color: #d9480f;
 }
+
+table.table-style-1 {
+    border-collapse: collapse;
+}
+
+table.table-style-1 td, table.table-style-1 th  {
+    margin: 5px;
+    padding: 5px;
+}
+
+table.table-style-1 tbody tr:nth-child(odd) {
+    background-color: rgba(233,171,88,.5);
+}
+
+table.table-style-1 {
+    border: 1px solid #d9480f;
+}
+
+/* I took these block quote styles from MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote */
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+

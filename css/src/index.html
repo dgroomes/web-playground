@@ -136,5 +136,53 @@ sentence should render on one contiguous line.
     <div>Five</div>
 </div>
 
+<h2 id="styling_tables"><a href="#styling_tables">Styling Tables</a></h2>
+
+The <code>&lt;table></code> element has been a cornerstone of HTML since the early days. What are some effective options
+for styling tables?
+
+<p>The CSS 2 specification describes just about everything you need to know about the styling rules for tables.
+    Specifically, read section <a href="https://drafts.csswg.org/css2/#tables">17. Tables</a> and jump to sub-section <a
+            href="https://drafts.csswg.org/css2/#borders">17.6. Borders</a> which reads
+</p>
+
+<figure>
+    <blockquote cite="https://drafts.csswg.org/css2/#borders">
+        <p>There are two distinct models for setting borders on table cells in CSS. One is most suitable for so-called
+            <a href="https://drafts.csswg.org/css2/#separated-borders-model">separated borders</a> around individual
+            cells, the other is suitable for borders that are continuous from one end of the table to the other. Many
+            border styles can be achieved with either model, so it is often a matter of taste which one is used.</p>
+    </blockquote>
+    <figcaption>—<cite>CSS 2 Specification</cite></figcaption>
+</figure>
+
+<p>
+    We often want to use the <em>collapsed</em> border model. This is done with the property value <code>border-collapse:
+    collapse</code>. Here is a styled table using the collapsed border model:
+</p>
+
+<table class="table-style-1">
+    <thead>
+    <tr>
+        <th>Web Technology</th>
+        <th>Notes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>HTML</td>
+        <td>HyperText Markup Language</td>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>Cascading Style Sheets</td>
+    </tr>
+    <tr>
+        <td>JavaScript</td>
+        <td>JavaScript is a general-purpose programming language and is supported in web browsers.</td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
