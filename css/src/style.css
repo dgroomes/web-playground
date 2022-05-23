@@ -48,11 +48,28 @@ table.table-style-2 {
     overflow-x: auto;
 }
 
+table.table-style-2 thead tr {
+    /*
+    Freeze the header row.
+
+    Note: Because of the table mode is collapsed, I can't get the border of the header row to stay sticky. Also, it's a
+    bit surprising but you have to set the background color or else the background is transparent when you scroll down.
+    I guess, without setting the background color, it just inherits the background of the parent, which is transparent?
+    A workaround for the border problem is to use a box-shadow, which is nice in its own right.
+
+    MDN has a good example of this style of table: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#displaying_large_tables_in_small_spaces
+    */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 1px 5px black;
+}
+
 table.table-style-2 th {
-    border-bottom: 1px solid black;
     margin: var(--table-style-2-cell-margin);
     padding: var(--table-style-2-cell-padding);
     width: var(--table-style-2-default-column-width);
+    text-align: start;
 
     /* This is a trick to get user-resizable columns.
     See https://stackoverflow.com/questions/41674548/how-to-make-html-table-columns-resizable */
