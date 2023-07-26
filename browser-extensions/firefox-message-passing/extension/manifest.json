@@ -1,7 +1,7 @@
 {
   "name": "Message Passing",
   "manifest_version": 2,
-  "description": "This is a simple extension from the 'web-playground/browser-extension' sub-project",
+  "description": "This is a simple extension from the 'web-playground/browser-extension' subproject",
   "version": "1.0",
   "background": {
     "scripts": [

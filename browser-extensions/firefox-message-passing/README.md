@@ -2,6 +2,7 @@
 
 This is a Firefox web extension that illustrates message passing.
 
+
 ## Description
 
 This extension will pass messages between all three layers: the web page, a content script, and a background script.
@@ -10,28 +11,30 @@ A special web page must be served from a local web server and this web page is u
 
 This example is adapted from the official–and excellent–[MDN web extension examples](https://github.com/mdn/webextensions-examples/tree/master/page-to-extension-messaging).  
 
+
 ## Instructions
 
 Follow these instructions to install and run the extension in FireFox:
 
-* Open FireFox to the debug page
+1. Open FireFox to the debug page
     * Open FireFox
     * Paste and go to this URL: <about:debugging#/runtime/this-firefox>
-* Load the plugin
+2. Load the plugin
     * Click the button with the words *Load Temporary Add-on…*
     * In the file finder window that opens, find the file `extension/manifest.json` and click *Open*
     * It's installed!
-* Run a local web server:
-    * `python3 -m http.server --directory web/`
-* Open the browser
+3. Run a local web server:
+    * ```shell
+      python3 -m http.server --directory web/
+      ```
+4. Open the browser
     * Open the browser and navigate to <http://localhost:8000>
-* Pass some messages!
+5. Pass some messages!
     * Follow the instructions on the page to send messages between the three layers.
     * Open the console to see the results
 
-## Reference
 
-Materials that I referenced and found useful while developing this project:
+## Reference
 
 * [MDN Web Docs: *Sharing objects with page scripts*](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Sharing_objects_with_page_scripts)
   * This tripped me up. I had assumed that the barrier between the web page's JavaScript execution environment and a

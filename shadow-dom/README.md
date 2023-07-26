@@ -2,18 +2,22 @@
 
 A Shadow DOM example.
 
+
 ## Instructions
 
-* Run a local web server:
-    * `python3 -m http.server --directory src/`
-* Open the browser
+Follow these instructions to build and run the demo.
+
+1. Run a local web server:
+    * ```shell
+      python3 -m http.server --directory src/
+      ```
+2. Open the browser
     * Open the browser and navigate to <http://localhost:8000>
     * You will see differently styled elements; one for each Shadow DOM tree (screenshot below):
     ![shadow-dom-screenshot.png](shadow-dom-screenshot.png)
 
-## Reference
 
-Materials that I referenced and found useful while developing this project:
+## Reference
 
 * [MDN Web Docs: *How do you set up a local testing server?*](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server)
 * [MDN Web Docs: *Using templates and slots*](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots)

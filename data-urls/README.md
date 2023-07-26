@@ -2,21 +2,26 @@
 
 A *Data URLs* example which shows how to download client side content as a file.
 
+
 ## Description
 
-This sub-project defines a simple web page that illustrates the Data URLs feature. Data URLs encode content in a URL which
+This subproject defines a simple web page that illustrates the Data URLs feature. Data URLs encode content in a URL which
 conveniently lets the user download a file containing that content. No server interaction or separate page is necessary!
+
 
 ## Instructions
 
-* Run a local web server:
-    * `python3 -m http.server --directory src/`
-* Open the browser
+1. Run a local web server:
+    * ```shell
+      python3 -m http.server --directory src/
+      ```
+2. Open the browser
     * Open the browser and navigate to <http://localhost:8000>
-* Download the file!
+3. Download the file!
     * Click the download button to download the highlighted "environmental info" content as a file. This is awesome!
     * It will look something like this:
       ![Screenshot](screenshot.png "Screenshot")
+
 
 ## Reference
 

@@ -1,6 +1,6 @@
 {
   "name": "Change Header Text",
-  "description": "This is a simple extension from the 'web-playground/browser-extension' sub-project",
+  "description": "This is a simple extension from the 'web-playground/browser-extension' subproject",
   "version": "1.0",
   "manifest_version": 3,
   "background": {

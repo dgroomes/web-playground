@@ -4,19 +4,21 @@
 
 **NOTE**: This project was developed on macOS. It is for my own personal use.
 
+
 ## Description
 
 I'd like to learn web technologies like Shadow DOM, IndexedDB, and FlexBox. This repository is a vehicle for doing so.
 It contains my source code, instructions, notes and plans.
 
-## Standalone sub-projects
 
-This repository illustrates different concepts, patterns and examples via standalone sub-projects. Each sub-project is
-completely independent of the others and do not depend on the root project. This _standalone sub-project constraint_
-forces the sub-projects to be complete and maximizes the reader's chances of successfully running, understanding, and
+## Standalone subprojects
+
+This repository illustrates different concepts, patterns and examples via standalone subprojects. Each subproject is
+completely independent of the others and do not depend on the root project. This _standalone subproject constraint_
+forces the subprojects to be complete and maximizes the reader's chances of successfully running, understanding, and
 re-using the code.
 
-The sub-projects include:
+The subprojects include:
 
 ### `shadow-dom/`
 
@@ -48,9 +50,10 @@ A simple Chrome browser extension for learning purposes.
 
 See the README in [browser-extensions/](browser-extensions/).
 
+
 ## Wish List
 
-General clean ups, TODOs and things I wish to implement for this project:
+General clean-ups, TODOs and things I wish to implement for this project:
 
 * [x] DONE Implement a Shadow DOM example
 * [x] DONE Implement an IndexedDB example

@@ -2,6 +2,7 @@
 
 A collection of simple browser extensions for learning purposes.
 
+
 ## Extensions
 
 Each browser extension is defined in its own sub-directory. They include:
@@ -17,6 +18,7 @@ See the README in [manifest-v3-chrome/](manifest-v3-chrome/).
 This is a Firefox web extension that illustrates message passing.
 
 See the README in [firefox-message-passing/](firefox-message-passing/).
+
 
 ## Notes
 
@@ -39,13 +41,15 @@ article about
 it:[Building a cross-browser extension](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Build_a_cross_browser_extension)
 .
 
+
 ## Wish List
 
-General clean ups, TODOs and things I wish to implement for this project:
+General clean-ups, TODOs and things I wish to implement for this project:
 
-* DONE How can we include the JavaScript source code to avoid `Uncaught ReferenceError: getHeaderText is not defined`?
-* Look into "browser actions" instead of what I'm doing, which is a custom popup HTML document.
-* DONE Add message passing. I think message passing is a pretty important tool in extension design.
+* [x] DONE How can we include the JavaScript source code to avoid `Uncaught ReferenceError: getHeaderText is not defined`?
+* [ ] Look into "browser actions" instead of what I'm doing, which is a custom popup HTML document.
+* [x] DONE Add message passing. I think message passing is a pretty important tool in extension design.
+
 
 ## Reference
 
