@@ -106,3 +106,31 @@ blockquote p::after {
     content: '\201D';
 }
 
+/* Common variables for tip box */
+:root {
+    --tip-box-padding: 1rem;
+    --icon-size: 1.5rem;
+}
+
+/* Style for the tip box */
+.tip-box {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f9fafc;
+    border: 2px solid mediumseagreen;
+    padding: var(--tip-box-padding);
+    margin: var(--tip-box-padding) 0;
+    font-weight: bold;
+    color: darkgreen;
+    gap: var(--tip-box-padding);  /* Gap between flex children */
+}
+
+/* Inline SVG applied using the ::before pseudo-element */
+.tip-box::before {
+    content: '';
+    width: var(--icon-size);
+    height: var(--icon-size);
+    background-image: url('tip-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -17,6 +17,14 @@ Follow these instructions to build and run the demo.
     * Open the browser and navigate to <http://localhost:8000>
 
 
+## Wish List
+
+General clean-ups, TODOs and things I wish to implement for this project:
+
+* [x] DONE High extraction CSS. How much can I squeeze out of CSS to change the look of the page without actually changing
+  the HTML? Can you express an SVG in CSS?
+
+
 ## Reference
 
 * [MDN Web Docs: The `display` CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
